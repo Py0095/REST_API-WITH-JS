@@ -5,5 +5,6 @@ export default function Authentification(req,res,next){
     if(schem!="Bearer" || token!='1234'){
         return res.sendStatus(401);
     }
+    next();
     
     };
